@@ -1,5 +1,5 @@
 
- const apiUrl = 'http://localhost:3000/departments-users'; 
+ const apiUrl = 'http://195.208.161.184:5120/departments-users'; 
  function compareNumbers(a, b) {
     return a - b;
   }
