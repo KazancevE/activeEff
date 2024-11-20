@@ -16,13 +16,18 @@
          const dataGen = data['АКТИВ Консалтинг' ]
          console.log(dataGen)
          dataGen.sort((a,b) => {
-            if (a.eff < b.eff) {
-                return -1; // a идет перед b
+            if (a.eff == undefined || null) {
+                a.eff = '0%'
             }
-            if (a.eff > b.eff) {
-                return 1; // b идет перед a
-            }
-            return 0; // a и b равны
+            let aa = Number(a.eff.replace('%', ''))
+            let bb = Number(b.eff.replace('%', ''))
+                if (aa < bb) {
+                    return 1; 
+                }
+                if (aa > bb) {
+                    return -1; 
+                }
+                return 0;
          })
          const firstFiveElements = dataGen.splice(0, 5);
          console.log(firstFiveElements)
