@@ -15,7 +15,6 @@
         const dataGen = data['КТХ Проект' ]
          console.log(dataGen)
          dataGen.sort((a,b) => {
-            if (taskAtWork != '0') {
                 if (a.eff < b.eff) {
                     return -1; 
                 }
@@ -23,8 +22,6 @@
                     return 1; 
                 }
                 return 0;
-            }
-             
          })
          const firstFiveElements = dataGen.splice(0, 8);
          console.log(firstFiveElements)
