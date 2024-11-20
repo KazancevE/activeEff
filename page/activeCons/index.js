@@ -1,5 +1,5 @@
  // URL вашего API
- const apiUrl = 'http://195.208.161.184:5120/departments-users'; // Пример API
+ const apiUrl = 'http://195.208.161.184:3030/departments-users'; // Пример API
  function compareNumbers(a, b) {
     return a - b;
   }
