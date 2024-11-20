@@ -15,15 +15,15 @@
         const dataGen = data['КТХ Проект' ]
          console.log(dataGen)
          dataGen.sort((a,b) => {
-            let aa = a.eff.replace('%', '')
-            let bb = b.eff.replace('%', '')
-            if (aa == undefined || null) {
-                aa = '8%'
+            let aa = a.eff
+            let bb = b.eff
+            if (aa.replace('%', '') == undefined || null) {
+                a.eff = '0%'
             }
-                if (aa < bb) {
+                if (aa.replace('%', '') < bb.replace('%', '')) {
                     return -1; 
                 }
-                if (aa > bb) {
+                if (aa.replace('%', '') > bb.replace('%', '')) {
                     return 1; 
                 }
                 return 0;
