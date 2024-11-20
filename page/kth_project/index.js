@@ -15,6 +15,9 @@
         const dataGen = data['КТХ Проект' ]
          console.log(dataGen)
          dataGen.sort((a,b) => {
+            if (a.eff == undefined || null || NaN) {
+                a.eff = '0'
+            }
                 if (a.eff < b.eff) {
                     return -1; 
                 }
