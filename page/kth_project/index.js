@@ -22,10 +22,10 @@
             let aa = Number(a.eff.replace('%', ''))
             let bb = Number(b.eff.replace('%', ''))
                 if (aa < bb) {
-                    return -1; 
+                    return 1; 
                 }
                 if (aa > bb) {
-                    return 1; 
+                    return -1; 
                 }
                 return 0;
          })
