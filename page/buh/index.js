@@ -1,5 +1,5 @@
  // URL вашего API
- const apiUrl = 'https://195.208.161.184:3030/departments-users'; // Пример API
+ const apiUrl = 'https://eff.gkaktiv.ru:3030/departments-users'; // Пример API
  function compareNumbers(a, b) {
     return a - b;
   }
